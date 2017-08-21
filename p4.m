@@ -10,7 +10,7 @@ plot(foo, x)
 
 x = x-mean(x); % mean != 0, try to remove non-zero means
 h = 100;
-% autocorr(y, h) % found seasonal components, period T = 12
+autocorr(y, h) % found seasonal components, period T = 12
 
 % deseasonalization
 T = 12;
